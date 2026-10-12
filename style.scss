@@ -1,4 +1,194 @@
-body {
-    background-color: gray;
-    
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body > header {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+#logo img {
+  height: 30px;
+  display: block;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-button {
+  color: #a6e07a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  color: white;
+}
+
+.buy-button {
+  background-color: #6cb33f;
+  color: #222222;
+  padding: 12px 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #85cc57;
+}
+
+/* from here copy */
+#hero{
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('assets/over.png');;
+  background-size: cover;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.mc_hero{
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+.mc_hero img{
+  width: 100%;
+  height: 85%;
+  z-index: 1;
+}
+
+.mc_hero #hero-text{
+  z-index: 2;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+
+#feature1 {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 39px 9%;
+    min-height: 500px;
+}
+
+#feature1 img {
+    width: 450px;
+    height: 433px;
+    padding-top: 30px;
+    object-fit: contain
+}
+
+
+#feature1 h1 {
+    font-family: monospace;
+    font-size: 38px;
+    margin: 0 0 10px;
+    border-left: 4px solid white;
+    padding-left: 8px;
+}
+
+#feature1 p {
+    font-family: monospace;
+    font-size: 22px;
+    line-height: 1.35;
+    text-align: justify;
+    margin: 0;
+    max-width: 600px;
+}
+
+
+#feature2 {
+    background-color: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 9.5%;
+    min-height: 315px;
+}
+
+
+#feature2 h1 {
+    font-family: monospace;
+    font-size: 38px;
+    margin: 0 0 10px;
+    border-left: 4px solid white;
+    padding-left: 8px;
+}
+
+#feature2 p {
+    font-family: monospace;
+    font-size: 22px;
+    line-height: 1.35;
+    text-align: justify;
+    max-width: 600px;
+}
+
+#feature2 img {
+    width: 440px;
+    height: 520px;
+    object-fit: contain;
+}
+
+/* 
+dimension thingy ueghhhh -------------------------------------------------
+*/
+#dimensions {
+  background-color: black;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-align: left;
+}
+
+#dimensions::before {
+  content: "DIMENSIONS";
+  display: block;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#dimensions div {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+  background-size: cover;
+  background-position: center;
+}
+
+#dimensions p {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+
+#overworld {
+  background-image: url("assets/over.png");
+}
+
+#nether {
+  background-image: url("assets/nether.png");
+}
+
+#end {
+  background-image: url("assets/end.png");
 }
